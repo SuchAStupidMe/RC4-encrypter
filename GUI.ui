@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CourseWork</class>
+ <widget class="QTabWidget" name="CourseWork">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>TabWidget</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="first_tab">
+   <attribute name="title">
+    <string>Інформація</string>
+   </attribute>
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;RC4&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;encrypter/decrypter&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="second_tab">
+   <attribute name="title">
+    <string>Шифратор</string>
+   </attribute>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>160</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="browse_file">
+       <property name="text">
+        <string>Виберіть файл</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="password_line">
+       <property name="text">
+        <string>Введіть пароль</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="encrypt_button">
+       <property name="text">
+        <string>Зашифрувати</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="filename_label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Місцерозташування файлу</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="third_tab">
+   <attribute name="title">
+    <string>Дешифратор</string>
+   </attribute>
+   <widget class="QLabel" name="filename_label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>151</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Місцерозташування файлу</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>160</width>
+      <height>99</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="browse_file_2">
+       <property name="text">
+        <string>Виберіть файл</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="password_line_2">
+       <property name="text">
+        <string>Введіть пароль</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="decrypt_button">
+       <property name="text">
+        <string>Розшифрувати</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
